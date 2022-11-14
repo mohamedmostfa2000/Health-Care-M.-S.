@@ -1,0 +1,10 @@
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\bin\Debug\Health_Care_M.S.exe.config
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\bin\Debug\Health_Care_M.S.exe
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\bin\Debug\Health_Care_M.S.pdb
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\obj\Debug\Health Care M. S.csproj.AssemblyReference.cache
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\obj\Debug\Health_Care_M.S.Properties.Resources.resources
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\obj\Debug\Health Care M. S.csproj.GenerateResource.cache
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\obj\Debug\Health Care M. S.csproj.CoreCompileInputs.cache
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\obj\Debug\Health_Care_M.S.exe
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\obj\Debug\Health_Care_M.S.pdb
+C:\Users\fager\source\repos\Health Care M. S\Health Care M. S\obj\Debug\Health_Care_M.S.Form1.resources
