@@ -81,7 +81,7 @@ namespace Health_Care_M.S
                 string BDate = DOBTb.Value.Date.ToString();
                 string Phone = PatPhoneTb.Text;
                 string Address = PatAddTb.Text;
-                string Query = "update PatientTbl set PatName = '{0}',PatGen = '{1}',PatDOB = '{2}',PatPhone = '{3}',PatAdd = '{4}' where PatCode = {5}";
+                string Query = "Update PatientTbl set PatName = '{0}',PatGen = '{1}',PatDOB = '{2}',PatPhone = '{3}',PatAdd = '{4}' where PatCode = {5}";
                 Query = string.Format(Query, Patient, Gender, BDate, Phone, Address);
                 Con.SetData(Query);
                 ShowPatients();
