@@ -137,9 +137,9 @@ namespace Health_Care_M.S
             this.label4.ForeColor = System.Drawing.Color.Peru;
             this.label4.Location = new System.Drawing.Point(36, 340);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 25);
+            this.label4.Size = new System.Drawing.Size(107, 25);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Diagonastic";
+            this.label4.Text = "Diagnosis";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
