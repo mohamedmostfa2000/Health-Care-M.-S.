@@ -16,7 +16,7 @@ namespace Health_Care_M.S
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tests());
+            Application.Run(new Patients());
         }
     }
 }

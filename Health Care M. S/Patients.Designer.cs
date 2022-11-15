@@ -46,21 +46,22 @@ namespace Health_Care_M.S
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.PatientsList = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.DOBTb = new System.Windows.Forms.DateTimePicker();
+            this.GenCb = new System.Windows.Forms.ComboBox();
+            this.Deletebtn = new System.Windows.Forms.Button();
+            this.Editbtn = new System.Windows.Forms.Button();
+            this.Savebtn = new System.Windows.Forms.Button();
+            this.PatAddTb = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PatPhoneTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PatientNameTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -73,6 +74,7 @@ namespace Health_Care_M.S
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientsList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -175,7 +177,6 @@ namespace Health_Care_M.S
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox5
             // 
@@ -186,7 +187,6 @@ namespace Health_Care_M.S
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox4
             // 
@@ -197,7 +197,6 @@ namespace Health_Care_M.S
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -208,7 +207,6 @@ namespace Health_Care_M.S
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox2
             // 
@@ -219,7 +217,6 @@ namespace Health_Care_M.S
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -255,6 +252,7 @@ namespace Health_Care_M.S
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.PatientsList);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.panel3);
@@ -262,6 +260,17 @@ namespace Health_Care_M.S
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1174, 713);
             this.panel2.TabIndex = 8;
+            // 
+            // PatientsList
+            // 
+            this.PatientsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PatientsList.Location = new System.Drawing.Point(46, 395);
+            this.PatientsList.Name = "PatientsList";
+            this.PatientsList.RowHeadersWidth = 51;
+            this.PatientsList.RowTemplate.Height = 24;
+            this.PatientsList.Size = new System.Drawing.Size(1095, 282);
+            this.PatientsList.TabIndex = 5;
+            this.PatientsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientsList_CellContentClick);
             // 
             // label13
             // 
@@ -289,68 +298,94 @@ namespace Health_Care_M.S
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.DOBTb);
+            this.panel3.Controls.Add(this.GenCb);
+            this.panel3.Controls.Add(this.Deletebtn);
+            this.panel3.Controls.Add(this.Editbtn);
+            this.panel3.Controls.Add(this.Savebtn);
+            this.panel3.Controls.Add(this.PatAddTb);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.PatPhoneTb);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox4);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.PatientNameTb);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(20, 18);
+            this.panel3.Location = new System.Drawing.Point(17, 18);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1134, 280);
             this.panel3.TabIndex = 0;
             // 
-            // button3
+            // DOBTb
             // 
-            this.button3.BackColor = System.Drawing.Color.SaddleBrown;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Location = new System.Drawing.Point(916, 214);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 42);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DOBTb.CalendarMonthBackground = System.Drawing.Color.White;
+            this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOBTb.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.DOBTb.Location = new System.Drawing.Point(344, 126);
+            this.DOBTb.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
+            this.DOBTb.Name = "DOBTb";
+            this.DOBTb.Size = new System.Drawing.Size(221, 22);
+            this.DOBTb.TabIndex = 17;
+            this.DOBTb.Value = new System.DateTime(2022, 11, 15, 16, 16, 0, 0);
             // 
-            // button2
+            // GenCb
             // 
-            this.button2.BackColor = System.Drawing.Color.OliveDrab;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Location = new System.Drawing.Point(916, 166);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 42);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.GenCb.FormattingEnabled = true;
+            this.GenCb.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GenCb.Location = new System.Drawing.Point(29, 230);
+            this.GenCb.Name = "GenCb";
+            this.GenCb.Size = new System.Drawing.Size(221, 24);
+            this.GenCb.TabIndex = 16;
             // 
-            // button1
+            // Deletebtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(916, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 42);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Deletebtn.BackColor = System.Drawing.Color.SaddleBrown;
+            this.Deletebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deletebtn.ForeColor = System.Drawing.Color.DimGray;
+            this.Deletebtn.Location = new System.Drawing.Point(916, 214);
+            this.Deletebtn.Name = "Deletebtn";
+            this.Deletebtn.Size = new System.Drawing.Size(168, 42);
+            this.Deletebtn.TabIndex = 5;
+            this.Deletebtn.Text = "Delete";
+            this.Deletebtn.UseVisualStyleBackColor = false;
+            this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
             // 
-            // textBox5
+            // Editbtn
             // 
-            this.textBox5.Location = new System.Drawing.Point(651, 116);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(224, 140);
-            this.textBox5.TabIndex = 13;
+            this.Editbtn.BackColor = System.Drawing.Color.OliveDrab;
+            this.Editbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editbtn.ForeColor = System.Drawing.Color.DimGray;
+            this.Editbtn.Location = new System.Drawing.Point(916, 166);
+            this.Editbtn.Name = "Editbtn";
+            this.Editbtn.Size = new System.Drawing.Size(168, 42);
+            this.Editbtn.TabIndex = 15;
+            this.Editbtn.Text = "Edit";
+            this.Editbtn.UseVisualStyleBackColor = false;
+            this.Editbtn.Click += new System.EventHandler(this.Editbtn_Click);
+            // 
+            // Savebtn
+            // 
+            this.Savebtn.BackColor = System.Drawing.Color.Firebrick;
+            this.Savebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Savebtn.ForeColor = System.Drawing.Color.DimGray;
+            this.Savebtn.Location = new System.Drawing.Point(916, 115);
+            this.Savebtn.Name = "Savebtn";
+            this.Savebtn.Size = new System.Drawing.Size(168, 42);
+            this.Savebtn.TabIndex = 14;
+            this.Savebtn.Text = "Save";
+            this.Savebtn.UseVisualStyleBackColor = false;
+            this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
+            // 
+            // PatAddTb
+            // 
+            this.PatAddTb.Location = new System.Drawing.Point(651, 116);
+            this.PatAddTb.Multiline = true;
+            this.PatAddTb.Name = "PatAddTb";
+            this.PatAddTb.Size = new System.Drawing.Size(224, 140);
+            this.PatAddTb.TabIndex = 13;
             // 
             // label12
             // 
@@ -363,13 +398,13 @@ namespace Health_Care_M.S
             this.label12.TabIndex = 12;
             this.label12.Text = "Patient\'s Address";
             // 
-            // textBox3
+            // PatPhoneTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(344, 221);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(224, 35);
-            this.textBox3.TabIndex = 10;
+            this.PatPhoneTb.Location = new System.Drawing.Point(344, 221);
+            this.PatPhoneTb.Multiline = true;
+            this.PatPhoneTb.Name = "PatPhoneTb";
+            this.PatPhoneTb.Size = new System.Drawing.Size(224, 35);
+            this.PatPhoneTb.TabIndex = 10;
             // 
             // label10
             // 
@@ -382,14 +417,6 @@ namespace Health_Care_M.S
             this.label10.TabIndex = 8;
             this.label10.Text = "Patient\'s Phone";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(344, 116);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(224, 41);
-            this.textBox4.TabIndex = 11;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -400,15 +427,6 @@ namespace Health_Care_M.S
             this.label11.Size = new System.Drawing.Size(231, 25);
             this.label11.TabIndex = 9;
             this.label11.Text = "Patients\'s Date of Birth";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(29, 221);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 35);
-            this.textBox2.TabIndex = 6;
             // 
             // label8
             // 
@@ -421,13 +439,13 @@ namespace Health_Care_M.S
             this.label8.TabIndex = 4;
             this.label8.Text = "Patient\'s Gender";
             // 
-            // textBox1
+            // PatientNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 116);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 41);
-            this.textBox1.TabIndex = 7;
+            this.PatientNameTb.Location = new System.Drawing.Point(29, 116);
+            this.PatientNameTb.Multiline = true;
+            this.PatientNameTb.Name = "PatientNameTb";
+            this.PatientNameTb.Size = new System.Drawing.Size(221, 41);
+            this.PatientNameTb.TabIndex = 7;
             // 
             // label9
             // 
@@ -477,6 +495,7 @@ namespace Health_Care_M.S
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientsList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -505,20 +524,21 @@ namespace Health_Care_M.S
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox PatAddTb;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox PatPhoneTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PatientNameTb;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Deletebtn;
+        private System.Windows.Forms.Button Editbtn;
+        private System.Windows.Forms.Button Savebtn;
+        private System.Windows.Forms.ComboBox GenCb;
+        private System.Windows.Forms.DateTimePicker DOBTb;
+        private System.Windows.Forms.DataGridView PatientsList;
     }
 }
