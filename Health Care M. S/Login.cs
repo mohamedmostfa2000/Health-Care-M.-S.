@@ -17,9 +17,29 @@ namespace Health_Care_M.S
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+       
+        private void LoginBtn_Click(object sender, EventArgs e)
         {
+            if(UnameTb.Text=="" || PasswordTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!");
+            }
 
+            else if (UnameTb.Text=="Admin" && PasswordTb.Text == "Password")
+            {
+                Patients obj = new Patients();
+                obj.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                UnameTb.Text = "";
+                PasswordTb.Text = "";
+
+            }
         }
+
+        
     }
 }

@@ -140,5 +140,33 @@ namespace Health_Care_M.S
                 MessageBox.Show("Diagnosis Updated");
             }
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Patients obj = new Patients();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Tests obj = new Tests();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Diagnosis obj = new Diagnosis();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
