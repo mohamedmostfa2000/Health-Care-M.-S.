@@ -68,7 +68,7 @@ namespace Health_Care_M.S
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(398, 186);
+            this.label2.Location = new System.Drawing.Point(400, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 25);
             this.label2.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace Health_Care_M.S
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(403, 214);
+            this.textBox1.Location = new System.Drawing.Point(405, 262);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(196, 22);
             this.textBox1.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Health_Care_M.S
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Brown;
-            this.label3.Location = new System.Drawing.Point(398, 255);
+            this.label3.Location = new System.Drawing.Point(400, 303);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 25);
             this.label3.TabIndex = 2;
@@ -94,7 +94,7 @@ namespace Health_Care_M.S
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(403, 283);
+            this.textBox2.Location = new System.Drawing.Point(405, 331);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(196, 22);
             this.textBox2.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace Health_Care_M.S
             this.button1.BackColor = System.Drawing.Color.Firebrick;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(403, 337);
+            this.button1.Location = new System.Drawing.Point(405, 385);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 42);
             this.button1.TabIndex = 4;
@@ -116,7 +116,7 @@ namespace Health_Care_M.S
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Brown;
-            this.label4.Location = new System.Drawing.Point(469, 397);
+            this.label4.Location = new System.Drawing.Point(471, 445);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 25);
             this.label4.TabIndex = 2;
@@ -132,7 +132,7 @@ namespace Health_Care_M.S
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,8 +148,9 @@ namespace Health_Care_M.S
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

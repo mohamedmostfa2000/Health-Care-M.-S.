@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Health_Care_M.S
 {
-    public partial class Patients : Form
+    public partial class Tests : Form
     {
-        public Patients()
+        public Tests()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
